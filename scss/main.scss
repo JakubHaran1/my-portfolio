@@ -1,0 +1,144 @@
+@import "_reset.scss";
+@import "_variables.scss";
+.shadow {
+  position: absolute;
+  background-color: rgba($color: #000000, $alpha: 0.6);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.hero-image {
+  position: relative;
+  height: 250px;
+  background-image: url(../img/code-944499_1280.jpg);
+  z-index: 0;
+  h1 {
+    font-size: 4rem;
+    line-height: 250px;
+    color: $secondary-color;
+  }
+}
+.nav {
+  background-color: $secondary-color;
+  font-size: 1.5rem;
+
+  .nav-link {
+    color: $fifth_color;
+  }
+}
+.about-me {
+  color: $secondary-color;
+  h2 {
+    font-size: 3rem;
+  }
+}
+.logo {
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.carousel-inner {
+  overflow: hidden;
+
+  .image-item {
+    position: relative;
+    z-index: 0;
+    .shadow {
+      z-index: 1;
+      background-color: rgba($color: #000000, $alpha: 0.6);
+      height: 300px;
+      object-fit: cover;
+    }
+    .spider {
+      // transform: translateY(-25%);
+      height: 300px;
+      object-fit: cover;
+    }
+    .diving {
+      height: 300px;
+      object-fit: cover;
+    }
+    .ski {
+      height: 300px;
+      object-fit: cover;
+    }
+  }
+
+  .carousel-caption {
+    color: $secondary-color;
+    h5 {
+      font-size: 3rem;
+    }
+  }
+}
+
+.my-projects {
+  .card {
+    color: $secondary-color;
+    position: relative;
+    background-color: $main-color;
+    height: 450px;
+    border: 3px solid $secondary-color;
+    text-align: center;
+    .second {
+      height: 300px;
+    }
+    .card-title {
+      font-size: 2.8rem;
+      margin-bottom: 3rem;
+
+      width: 100%;
+    }
+
+    .border {
+      border-bottom: 5px solid $secondary-color;
+    }
+    .main-describle {
+      margin: 2rem 0 5rem;
+    }
+    .icon {
+      font-size: 7rem;
+      margin-bottom: 4rem;
+    }
+    .card-footer {
+      margin-bottom: 2rem;
+      .btn {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+.contact {
+  min-height: 400px;
+  background-color: $secondary-color;
+  .contact-header {
+    font-size: 4rem;
+    text-transform: uppercase;
+  }
+  .adres {
+    padding: 2rem 0;
+    border: 3px solid $main-color;
+    h4 {
+      font-size: 2rem;
+    }
+  }
+}
+.form {
+  border: 3px solid $main-color;
+}
+.footer {
+  background-color: $main-color;
+  height: 50px;
+  h2 {
+    line-height: 50px;
+  }
+}
+.form-floating {
+  .form-control {
+    padding-bottom: 5rem;
+  }
+}
